@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+
+# backup - copy current VS Code user keybindings into this repository.
+#
+# Usage:
+#   ./backup
+#
+# The script writes to ./User/keybindings.json relative to the script location.
+
+set -euo pipefail
+
+case "$(uname)" in
+    Darwin)
+        USERDATA="$HOME/Library/Application Support/Code"
+        ;;
+    Linux)
+        if [[ -n "${XDG_CONFIG_HOME:-}" ]]; then
+            USERDATA="$XDG_CONFIG_HOME/Code"
+        else
+            USERDATA="$HOME/.config/Code"
+        fi
+        ;;
+    CYGWIN*|MINGW*|MSYS*)
+        USERDATA="$APPDATA/Code"
+        ;;
+    *)
+        echo "warning: unknown platform '$(uname)', using ~/.config/Code" >&2
+        USERDATA="$HOME/.config/Code"
+        ;;
+esac
+
+SRC="$USERDATA/User/keybindings.json"
+DEST_DIR="$(dirname "$0")/User"
+DEST="$DEST_DIR/keybindings.json"
+
+if [[ ! -f "$SRC" ]]; then
+    echo "error: source file '$SRC' does not exist" >&2
+    exit 1
+fi
+
+mkdir -p "$DEST_DIR"
+cp -a "$SRC" "$DEST"
+
+echo "backed up keybindings to $DEST"

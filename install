@@ -1,0 +1,60 @@
+#!/usr/bin/env bash
+
+# install - copy custom VS Code user keybindings and settings into the
+# VS Code user directory.  The script discovers the path using the
+# "code" command that ships with Visual Studio Code.
+#
+# Usage:
+#   ./install
+#
+# It assumes that the repository has a "User" subdirectory containing
+# the files you wish to deploy (e.g. keybindings.json, settings.json,
+# etc.).  Only existing files are copied, and the destination directory
+# is created if necessary.
+
+set -euo pipefail
+
+# compute the default user data directory based on platform
+case "$(uname)" in
+    Darwin)
+        USERDATA="$HOME/Library/Application Support/Code"
+        ;;
+    Linux)
+        # respect XDG_CONFIG_HOME when set, otherwise default
+        if [[ -n "${XDG_CONFIG_HOME:-}" ]]; then
+            USERDATA="$XDG_CONFIG_HOME/Code"
+        else
+            USERDATA="$HOME/.config/Code"
+        fi
+        ;;
+    CYGWIN*|MINGW*|MSYS*)
+        USERDATA="$APPDATA/Code"
+        ;;
+    *)
+        echo "warning: unknown platform '$(uname)', using ~/.config/Code" >&2
+        USERDATA="$HOME/.config/Code"
+        ;;
+esac
+
+# note: we don't actually create the directory here; the copy step
+# will ensure the "User" subdirectory exists
+
+# destination for settings/keybindings
+DEST="$USERDATA/User"
+mkdir -p "$DEST"
+
+# copy everything from local User folder
+SRC_DIR="$(dirname "$0")/User"
+if [[ ! -d "$SRC_DIR" ]]; then
+    echo "error: source directory '$SRC_DIR' does not exist" >&2
+    exit 1
+fi
+
+# iterate over files in $SRC_DIR and copy
+for f in "$SRC_DIR"/*; do
+    [[ -e "$f" ]] || continue
+    cp -a "$f" "$DEST/"
+    echo "copied $(basename "$f") to $DEST/"
+done
+
+echo "installation complete"
