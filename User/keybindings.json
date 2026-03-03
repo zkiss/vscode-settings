@@ -288,20 +288,12 @@
     "command": "workbench.action.showCommands"
   },
   {
-    "key": "shift+ctrl+n",
-    "command": "workbench.action.quickOpen"
-  },
-  {
-    "key": "shift+ctrl+alt+n",
-    "command": "workbench.action.gotoSymbol"
-  },
-  {
-    "key": "ctrl+alt+s",
-    "command": "workbench.action.openSettings"
-  },
-  {
     "key": "alt+f12",
     "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "alt+1",
+    "command": "workbench.view.explorer"
   },
   {
     "key": "shift+ctrl+l",
