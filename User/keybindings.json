@@ -132,10 +132,6 @@
     "command": "editor.action.refactor"
   },
   {
-    "key": "ctrl+alt+p",
-    "command": "editor.action.refactor"
-  },
-  {
     "key": "ctrl+alt+v",
     "command": "editor.action.refactor"
   },
