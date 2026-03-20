@@ -13,7 +13,7 @@
   },
   {
     "key": "ctrl+k",
-    "command": "git.commit"
+    "command": "workbench.view.scm"
   },
   {
     "key": "shift+ctrl+w",
@@ -302,5 +302,9 @@
   {
     "key": "ctrl+l",
     "command": "copilot.chat.show"
+  },
+  {
+    "key": "escape",
+    "command": "workbench.action.focusActiveEditorGroup"
   }
 ]
