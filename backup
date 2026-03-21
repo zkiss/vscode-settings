@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 
-# backup - copy current VS Code user keybindings into this repository.
+# backup - copy current VS Code user keybindings and settings into this
+# repository.
 #
 # Usage:
 #   ./backup
 #
-# The script writes to ./User/keybindings.json relative to the script location.
+# The script writes to ./User relative to the script location.
 
 set -euo pipefail
 
@@ -29,16 +30,22 @@ case "$(uname)" in
         ;;
 esac
 
-SRC="$USERDATA/User/keybindings.json"
 DEST_DIR="$(dirname "$0")/User"
-DEST="$DEST_DIR/keybindings.json"
-
-if [[ ! -f "$SRC" ]]; then
-    echo "error: source file '$SRC' does not exist" >&2
-    exit 1
-fi
-
 mkdir -p "$DEST_DIR"
-cp -a "$SRC" "$DEST"
 
-echo "backed up keybindings to $DEST"
+FILES=(keybindings.json settings.json)
+
+for filename in "${FILES[@]}"; do
+    SRC="$USERDATA/User/$filename"
+    DEST="$DEST_DIR/$filename"
+
+    if [[ ! -f "$SRC" ]]; then
+        echo "warning: source file '$SRC' does not exist; skipping" >&2
+        continue
+    fi
+
+    cp -a "$SRC" "$DEST"
+    echo "backed up $filename to $DEST"
+done
+
+echo "backup complete"
