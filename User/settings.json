@@ -1,0 +1,23 @@
+{
+    "workbench.startupEditor": "none",
+    "chat.tools.urls.autoApprove": {
+        "https://code.visualstudio.com": {
+            "approveRequest": false,
+            "approveResponse": true
+        }
+    },
+    "chat.tools.terminal.autoApprove": {
+        "code --help": true,
+        "grep": true,
+        "true": true,
+        "head": true
+    },
+    "chat.tools.terminal.ignoreDefaultAutoApproveRules": true,
+    "explorer.confirmDragAndDrop": false,
+    "git.enableSmartCommit": true,
+    "files.autoSave": "afterDelay",
+    "workbench.list.openMode": "doubleClick",
+    "workbench.welcomePage.walkthroughs.openOnInstall": false,
+    "window.openFoldersInNewWindow": "on",
+    "terminal.integrated.defaultProfile.linux": "zsh"
+}
