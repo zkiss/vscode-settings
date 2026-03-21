@@ -217,7 +217,18 @@
   },
   {
     "key": "ctrl+alt+z",
-    "command": "git.undoCommit"
+    "command": "git.revertSelectedRanges",
+    "when": "editorTextFocus && resourceScheme == file"
+  },
+  {
+    "key": "ctrl+alt+z",
+    "command": "diffEditor.revert",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "ctrl+alt+z",
+    "command": "workbench.action.files.revert",
+    "when": "listFocus"
   },
   {
     "key": "shift+ctrl+f5",
