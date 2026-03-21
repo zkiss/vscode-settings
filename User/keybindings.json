@@ -24,6 +24,10 @@
     "command": "workbench.action.closeActiveEditor"
   },
   {
+    "key": "shift+f4",
+    "command": "workbench.action.copyEditorToNewWindow"
+  },
+  {
     "key": "ctrl+w",
     "command": "workbench.action.closeActiveEditor"
   },
