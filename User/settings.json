@@ -19,5 +19,7 @@
     "workbench.list.openMode": "doubleClick",
     "workbench.welcomePage.walkthroughs.openOnInstall": false,
     "window.openFoldersInNewWindow": "on",
-    "terminal.integrated.defaultProfile.linux": "zsh"
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "chatgpt.followUpQueueMode": "steer",
+    "chatgpt.reviewDelivery": "detached"
 }

@@ -236,7 +236,7 @@
   },
   {
     "key": "ctrl+f5",
-    "command": "workbench.action.debug.run"
+    "command": "workbench.action.debug.run" 
   },
   {
     "key": "shift+ctrl+alt+j",
