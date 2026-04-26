@@ -172,6 +172,11 @@
     "command": "explorer.newFile"
   },
   {
+    "key": "shift+ctrl+n",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
     "key": "ctrl+alt+o",
     "command": "editor.action.organizeImports"
   },
