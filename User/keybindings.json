@@ -272,10 +272,6 @@
     "command": "editor.action.surroundWith"
   },
   {
-    "key": "ctrl+tab",
-    "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"
-  },
-  {
     "key": "f11",
     "command": "bookmarks.toggle"
   },
