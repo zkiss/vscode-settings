@@ -44,6 +44,10 @@
     "command": "workbench.action.tasks.build"
   },
   {
+    "key": "shift+ctrl+b",
+    "command": "git.checkout"
+  },
+  {
     "key": "shift+ctrl+d",
     "command": "editor.action.deleteLines"
   },

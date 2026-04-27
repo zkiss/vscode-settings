@@ -21,5 +21,6 @@
     "window.openFoldersInNewWindow": "on",
     "terminal.integrated.defaultProfile.linux": "zsh",
     "chatgpt.followUpQueueMode": "steer",
-    "chatgpt.reviewDelivery": "detached"
+    "chatgpt.reviewDelivery": "detached",
+    "extensions.ignoreRecommendations": true
 }
