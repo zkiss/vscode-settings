@@ -122,16 +122,8 @@
     "command": "workbench.action.gotoLine"
   },
   {
-    "key": "ctrl+m",
-    "command": "workbench.action.gotoSymbol"
-  },
-  {
-    "key": "shift+ctrl+m",
-    "command": "workbench.action.gotoSymbol"
-  },
-  {
     "key": "shift+ctrl+g",
-    "command": "workbench.action.gotoSymbol"
+    "command": "testing.goToRelatedTest"
   },
   {
     "key": "ctrl+alt+n",
