@@ -111,7 +111,7 @@
   },
   {
     "key": "ctrl+t",
-    "command": "workbench.action.gotoSymbol"
+    "command": "workbench.action.showAllSymbols"
   },
   {
     "key": "shift+ctrl+t",
