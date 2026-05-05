@@ -254,10 +254,6 @@
     "command": "editor.action.addSelectionToNextFindMatch"
   },
   {
-    "key": "shift+f11",
-    "command": "bookmarks.toggle"
-  },
-  {
     "key": "f7",
     "command": "workbench.action.debug.stepInto"
   },
@@ -316,9 +312,5 @@
   {
     "key": "ctrl+l",
     "command": "copilot.chat.show"
-  },
-  {
-    "key": "escape",
-    "command": "workbench.action.focusActiveEditorGroup"
   }
 ]
