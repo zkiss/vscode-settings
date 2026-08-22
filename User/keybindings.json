@@ -21,10 +21,6 @@
     "command": "workbench.action.openRecent"
   },
   {
-    "key": "shift+ctrl+e",
-    "command": "workbench.action.openRecentlyClosedEditor"
-  },
-  {
     "key": "shift+ctrl+a",
     "command": "workbench.action.showCommands"
   },
@@ -55,10 +51,6 @@
 
   // ===== File Explorer =====
   {
-    "key": "alt+insert",
-    "command": "explorer.newFile"
-  },
-  {
     "key": "ctrl+n",
     "command": "explorer.newFile",
     "when": "!terminalFocus"
@@ -71,7 +63,7 @@
   {
     "key": "shift+ctrl+n",
     "command": "explorer.newFolder",
-    "when": "explorerViewletVisible && filesExplorerFocus"
+    "when": "filesExplorerFocus"
   },
   {
     "key": "up",
