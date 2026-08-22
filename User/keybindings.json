@@ -232,10 +232,6 @@
     "command": "git.checkout"
   },
   {
-    "key": "shift+ctrl+alt+p",
-    "command": "git.fetch"
-  },
-  {
     "key": "ctrl+alt+p",
     "command": "git.fetch"
   },
@@ -250,7 +246,7 @@
   {
     "key": "ctrl+alt+z",
     "command": "git.revertSelectedRanges",
-    "when": "editorTextFocus && resourceScheme == file"
+    "when": "editorTextFocus && editorHasSelection && resourceScheme == file"
   },
   {
     "key": "ctrl+alt+z",
