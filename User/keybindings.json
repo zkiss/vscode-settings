@@ -120,7 +120,7 @@
   },
   {
     "key": "ctrl+r",
-    "command": "actions.find"
+    "command": "editor.action.startFindReplaceAction"
   },
   {
     "key": "shift+ctrl+f",
