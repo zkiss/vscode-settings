@@ -56,11 +56,6 @@
     "when": "!terminalFocus"
   },
   {
-    "key": "ctrl+n",
-    "command": "workbench.action.terminal.new",
-    "when": "terminalFocus"
-  },
-  {
     "key": "shift+ctrl+n",
     "command": "explorer.newFolder",
     "when": "filesExplorerFocus"
@@ -379,6 +374,12 @@
     "command": "workbench.action.terminal.focusPrevious",
     "when": "terminalFocus"
   },
+  {
+    "key": "ctrl+n",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalFocus"
+  },
+
 
   // ===== Copilot Chat =====
   {
