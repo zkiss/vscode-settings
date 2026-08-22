@@ -250,13 +250,13 @@
   },
   {
     "key": "ctrl+alt+z",
-    "command": "diffEditor.revert",
-    "when": "isInDiffEditor"
+    "command": "git.clean",
+    "when": "editorTextFocus && !editorHasSelection && resourceScheme == file"
   },
   {
     "key": "ctrl+alt+z",
-    "command": "workbench.action.files.revert",
-    "when": "listFocus"
+    "command": "diffEditor.revert",
+    "when": "isInDiffEditor"
   },
 
   // ===== Tasks, testing, and debugging =====

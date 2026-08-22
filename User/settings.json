@@ -28,5 +28,6 @@
     "workbench.editor.enablePreview": false,
     "window.title": "${rootNameShort}${separator}${appName}",
     "explorer.autoReveal": false,
-    "explorer.autoOpenDroppedFile": false
+    "explorer.autoOpenDroppedFile": false,
+    "": ""
 }
