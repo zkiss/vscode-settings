@@ -312,5 +312,10 @@
   {
     "key": "ctrl+l",
     "command": "copilot.chat.show"
+  },
+  {
+    "key": "escape",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "(sideBarFocus || auxiliaryBarFocus || panelFocus) && !terminalFocus"
   }
 ]
