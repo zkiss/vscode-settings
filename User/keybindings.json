@@ -299,7 +299,13 @@
   },
   {
     "key": "alt+f12",
-    "command": "workbench.action.terminal.toggleTerminal"
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "alt+f12",
+    "command": "workbench.action.terminal.focus",
+    "when": "!terminalFocus"
   },
   {
     "key": "alt+1",
