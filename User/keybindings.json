@@ -171,7 +171,13 @@
   },
   {
     "key": "ctrl+n",
-    "command": "explorer.newFile"
+    "command": "explorer.newFile",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalFocus"
   },
   {
     "key": "shift+ctrl+n",
