@@ -206,48 +206,16 @@
     "command": "editor.action.smartSelect.shrink"
   },
   {
-    "key": "ctrl+alt+n",
-    "command": "editor.action.inlineSuggest.commit"
-  },
-  {
-    "key": "ctrl+alt+t",
-    "command": "editor.action.surroundWith"
-  },
-  {
-    "key": "shift+ctrl+q",
-    "command": "editor.action.showHover"
-  },
-  {
     "key": "ctrl+q",
     "command": "editor.action.showHover"
-  },
-  {
-    "key": "ctrl+alt+h",
-    "command": "editor.showCallHierarchy"
   },
   {
     "key": "ctrl+h",
     "command": "editor.showCallHierarchy"
   },
   {
-    "key": "ctrl+alt+m",
-    "command": "editor.action.extractMethod"
-  },
-  {
     "key": "ctrl+alt+c",
     "command": "editor.action.refactor"
-  },
-  {
-    "key": "ctrl+alt+f",
-    "command": "editor.action.refactor"
-  },
-  {
-    "key": "ctrl+alt+v",
-    "command": "editor.action.refactor"
-  },
-  {
-    "key": "ctrl+alt+o",
-    "command": "editor.action.organizeImports"
   },
   {
     "key": "ctrl+alt+l",
