@@ -48,6 +48,14 @@
     "key": "shift+f4",
     "command": "workbench.action.copyEditorToNewWindow"
   },
+  {
+    "key": "ctrl+p",
+    "command": "-workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "markdown.togglePreview"
+  },
 
   // ===== File Explorer =====
   {
