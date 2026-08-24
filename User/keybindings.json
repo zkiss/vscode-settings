@@ -194,10 +194,6 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "shift+ctrl+v",
-    "command": "editor.action.clipboardPasteAction"
-  },
-  {
     "key": "shift+ctrl+down",
     "command": "editor.action.moveLinesDownAction"
   },
